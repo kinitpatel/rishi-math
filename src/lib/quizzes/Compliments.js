@@ -1,6 +1,9 @@
 import Random from '@/lib/Random';
+import Log from '@/lib/Log';
 
 export default {
+	name: 'compliments',
+	...Log,
 	createQuestion() {
 		return {
 			a: Random.randBetween(1,99),

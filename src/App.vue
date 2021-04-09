@@ -3,11 +3,10 @@
 
 <v-app id="app">
     <v-navigation-drawer
-      v-model="drawer"
       app
       class="pt-4 lighten-4"
       permanent
-      color="purple"
+      color="blue"
     >
 
       <v-list-item>
@@ -16,7 +15,7 @@
             MathLeague Trainer
           </v-list-item-title>
           <v-list-item-subtitle>
-            boom
+            For Rishi
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>

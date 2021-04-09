@@ -1,6 +1,9 @@
 import Random from '@/lib/Random';
+import Log from '@/lib/Log';
 
 export default {
+	name: 'add-two',
+	...Log,
 	createQuestion() {
 		return {
 			a: Random.randBetween(100,999),

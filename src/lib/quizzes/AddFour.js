@@ -1,6 +1,9 @@
 import Random from '@/lib/Random';
+import Log from '@/lib/Log';
 
 export default {
+	name: 'add-four',
+	...Log,
 	createQuestion() {
 		return {
 			a: Random.randBetween(100,999),
@@ -19,5 +22,5 @@ export default {
 	},
 	toString(q) {
 		return `${q.a} + ${q.b} + ${q.c} + ${q.d} = ?`;
-	},
+	}
 };
