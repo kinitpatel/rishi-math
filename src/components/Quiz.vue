@@ -33,14 +33,12 @@
 	</v-container>
 </template>
 <script>
-import QuizMixin from "./QuizMixin";
 import Statistics from './Statistics.vue';
 
 const missed = [];
 
 export default {
   components: { Statistics },
-	mixins: [QuizMixin],
 	props: {
 		quiz: Object,
 	},
@@ -64,6 +62,11 @@ export default {
 		score () {
 			return this.totalProblems ? Math.floor(this.totalCorrect / this.totalProblems * 100) : 0;
 		},
+	},
+	watch: {
+		quiz() {
+			this.started = false;
+		}
 	},
 	methods: {
 		submit() {

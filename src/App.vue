@@ -63,11 +63,11 @@ export default {
 
   data: () => ({
     items: [
-      { title: 'Remainders', to: { name: 'Remainders'} },
-      { title: 'Add 4 numbers', to: { name: 'AddFour'}},
-      { title: 'Add 2 numbers', to: { name: 'AddTwo'}},
-      { title: 'Multiply',  to: { name: 'Multiply'}}, 
-      { title: 'Compliments', to: { name: 'Compliments'}},
+      { title: 'Remainders', to: { name: 'Home', query: { quiz: 'remainders'}} },
+      { title: 'Add 4 numbers', to: { name: 'Home', query: { quiz: 'add-four'}} },
+      { title: 'Add 2 numbers', to: { name: 'Home', query: { quiz: 'add-two'}} },
+      { title: 'Multiply',  to: { name: 'Home', query: { quiz: 'multiply'}} }, 
+      { title: 'Compliments', to: { name: 'Home', query: { quiz: 'compliments'}} },
     ]
   }),
 };

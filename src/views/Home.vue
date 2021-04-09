@@ -6,18 +6,23 @@
 
 <script>
 // @ is an alias to /src
-import Multiply from '@/lib/Multiply';
 import Quiz from '@/components/Quiz.vue';
+import quizzes from '@/lib/quizzes';
 
 export default {
-  name: 'Multiply',
+  name: 'Home',
   components: {
     Quiz,
   },
   data() {
     return {
-      quiz: Multiply
+
     };
-  }
+  },
+	computed: {
+		quiz() {
+			return quizzes[this.$route.query.quiz || 'remainders']
+		}
+	},
 }
 </script>

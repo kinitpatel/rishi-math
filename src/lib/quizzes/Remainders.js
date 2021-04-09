@@ -1,19 +1,19 @@
-import Random from './Random';
+import Random from '@/lib/Random';
 
 export default {
 	createQuestion() {
 		return {
-			a: Random.randBetween(100,999),
-			b: Random.randCloseToHundreds(),
+			n: Random.randBetween(100,999),
+			d: Random.randBetween(3,9),
 		};
 	},
 	answer(q) {
-		return q.a + q.b;
+		return q.n % q.d;
 	},
 	checkAnswer(answer, q) {
 		return this.answer(q) === parseInt(answer);
 	},
 	toString(q) {
-		return `${q.a} + ${q.b} = ?`;
-	},
+		return `${q.n} % ${q.d} = ?`;
+	}
 };

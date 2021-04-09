@@ -1,4 +1,4 @@
-import Random from './Random';
+import Random from '@/lib/Random';
 
 export default {
 	createQuestion() {
