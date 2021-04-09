@@ -1,13 +1,13 @@
 <template>
 <!-- App.vue -->
 
-<v-app id="inspire">
+<v-app id="app">
     <v-navigation-drawer
       v-model="drawer"
       app
-      class="pt-4"
-      color="grey lighten-3"
+      class="pt-4 lighten-4"
       permanent
+      color="purple"
     >
 
       <v-list-item>
@@ -31,11 +31,13 @@
             v-for="item in items"
             :key="item.title"
             link
+            :to="item.to"
+            exact
             
           >
-            <v-list-item-icon>
+            <!-- <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
+            </v-list-item-icon> -->
   
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -45,7 +47,7 @@
     </v-navigation-drawer>
 
     <v-main>
-      <!--  -->
+      <router-view/>
     </v-main>
   </v-app>
 </template>
@@ -61,11 +63,11 @@ export default {
 
   data: () => ({
     items: [
-      { title: 'Remainders', icon: 'mdi-play-box' },
-      { title: 'Add 4 numbers', icon: 'mdi-play-box'},
-      { title: 'Add 2 numbers', icon: 'mdi-play-box' },
-      { title: 'Multiply', icon: 'mdi-play-box' }, 
-      { title: 'Compliments', icon: 'mdi-play-box' },
+      { title: 'Remainders', to: { name: 'Remainders'} },
+      { title: 'Add 4 numbers', to: { name: 'AddFour'}},
+      { title: 'Add 2 numbers', to: { name: 'AddTwo'}},
+      { title: 'Multiply',  to: { name: 'Multiply'}}, 
+      { title: 'Compliments', to: { name: 'Compliments'}},
     ]
   }),
 };
