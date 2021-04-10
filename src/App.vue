@@ -66,7 +66,7 @@ export default {
       { title: 'Add 4 numbers', to: { name: 'Home', query: { quiz: 'add-four'}} },
       { title: 'Add 2 numbers', to: { name: 'Home', query: { quiz: 'add-two'}} },
       { title: 'Multiply',  to: { name: 'Home', query: { quiz: 'multiply'}} }, 
-      { title: 'Compliments', to: { name: 'Home', query: { quiz: 'compliments'}} },
+      { title: 'Complements', to: { name: 'Home', query: { quiz: 'complements'}} },
     ]
   }),
 };
