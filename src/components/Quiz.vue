@@ -48,12 +48,12 @@
 				>
 					<v-card-text class="pt-0">
 						<div class="title font-weight-light mb-2">
-							Accuracy Trend
+							Time Trend
 						</div>
 					</v-card-text>
 					<v-sparkline
-						:value="accuracyTrend"
-						:gradient="['#1feaea', '#ffd200', '#f72047']"
+						:value="timeTrend"
+						:gradient="['#f72047', '#ffd200', '#1feaea']"
 						:smooth="10"
 						:padding="8"
 						:line-width="2"
@@ -65,19 +65,18 @@
 						auto-draw
 					></v-sparkline>
 				</v-card>
-
 				<v-card
 					class="mt-4"
 					max-width="600"
 				>
 					<v-card-text class="pt-0">
 						<div class="title font-weight-light mb-2">
-							Time Trend
+							Accuracy Trend
 						</div>
 					</v-card-text>
 					<v-sparkline
-						:value="timeTrend"
-						:gradient="['#f72047', '#ffd200', '#1feaea']"
+						:value="accuracyTrend"
+						:gradient="['#1feaea', '#ffd200', '#f72047']"
 						:smooth="10"
 						:padding="8"
 						:line-width="2"
