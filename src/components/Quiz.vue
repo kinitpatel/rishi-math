@@ -126,9 +126,12 @@ export default {
 		question() {
 			return this.q ? this.quiz.toString(this.q) : '';
 		},
-		score () {
+		score() {
 			return this.totalProblems ? Math.floor(this.totalCorrect / this.totalProblems * 100) : 0;
 		},
+		averageTime() {
+			return (this.totalTime / this.totalProblems).toFixed(2);
+		}
 	},
 	watch: {
 		quiz() {
