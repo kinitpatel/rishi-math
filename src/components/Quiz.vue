@@ -171,7 +171,7 @@ export default {
 				}
 				this.totalCorrect++;
 				this.wrong = false;
-				if(missed.length && Math.random() < .33) {
+				if(missed.length && this.totalProblems % 5 === 0) {
 					this.q = missed.shift();
 				} else {
 					this.q = this.createQuestion();
