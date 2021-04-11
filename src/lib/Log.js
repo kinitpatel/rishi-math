@@ -21,7 +21,7 @@ export default {
 
 		const size = log.length < 50 ? 5 : 20;
 
-		const results = log.length > 5 ? [0, 100] : [];
+		const results = log.length > 5 ? [100] : [];
 		for(let i=size; i<log.length; i++) {
 			let s = log.slice(i-size, i+1);
 			let correct = s.filter(({result}) => result);
@@ -38,7 +38,7 @@ export default {
 
 		const size = log.length < 50 ? 5 : 20;
 
-		const results = log.length > 5 ? [0,10] : [];
+		const results = log.length > 5 ? [5] : [];
 		for(let i=size; i<log.length; i++) {
 			let s = log.slice(i-size, i+1);
 			let totalTime = 0;
