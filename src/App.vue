@@ -14,9 +14,6 @@
           <v-list-item-title class="title">
             MathLeague Trainer
           </v-list-item-title>
-          <v-list-item-subtitle>
-            For Rishi
-          </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 
