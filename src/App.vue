@@ -67,6 +67,9 @@ export default {
       { title: 'Add 2 numbers', to: { name: 'Home', query: { quiz: 'add-two'}} },
       { title: 'Multiply',  to: { name: 'Home', query: { quiz: 'multiply'}} }, 
       { title: 'Compliments', to: { name: 'Home', query: { quiz: 'compliments'}} },
+      { title: 'Division', to:{ name: 'Home', query: { quiz: 'division'}} },
+      { title: 'Double Subtraction', to:{ name: 'Home', query: { quiz: 'double-subtraction'}} },
+      { title: 'Three Digit Subtraction', to:{ name: 'Home', query: { quiz: 'three-digit-subtraction'}} },
     ]
   }),
 };
